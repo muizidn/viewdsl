@@ -132,7 +132,7 @@ You may want to read this post before proceed [Override Protocol Extension Defau
 ViewDSL make use of Dynamic Dispatch to determine what implementation of `put(_:)` to be called. And because either the protocol and it requirement is an @objc then we can override `put(_:)` for our AloeStackView.
 
 ```swift
-extension ViewDSL where Self: AloeStackView {
+extension AloeStaskView {
   @objc
   public override put(_ view: UIView) {
     addRow(view, animated: true)
