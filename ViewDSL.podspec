@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ViewDSL"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A DSL way to build UI in Swift"
 
   spec.description  = <<-DESC
@@ -12,7 +12,7 @@ This library helps you build your UI programmatically in fun way!
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Muhammad Muizzsuddin" => "muiz.idn@gmail.com" }
 
-  spec.ios.deployment_target = "12.1"
+  spec.ios.deployment_target = "9.0"
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/muizidn/viewdsl.git", :tag => "#{spec.version}" }

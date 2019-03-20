@@ -9,6 +9,5 @@
 import UIKit
 
 public protocol LayoutBuilderDSL {
-    associatedtype T where T: ViewDSL
-    func layout(_ view: T)
+    func layout(_ dsl: ViewDSL)
 }

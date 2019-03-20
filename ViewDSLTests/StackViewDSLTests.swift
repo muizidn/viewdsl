@@ -25,14 +25,14 @@ class StackViewDSLTests: XCTestCase {
     }
     
     func testHasArrangedSubview() {
-        let subview = view.stackAdd { (v: UIView) in }
+        let subview = view.add { (v: UIView) in }
         XCTAssertTrue(view.subviews.contains(subview))
         XCTAssertTrue(view.arrangedSubviews.contains(subview))
     }
     
     func testReturnArrangedSubviewObject() {
         var identifier: ObjectIdentifier!
-        let subview = view.stackAdd { (v: UIView) in
+        let subview = view.add { (v: UIView) in
             identifier = ObjectIdentifier(v)
         }
         
@@ -42,7 +42,7 @@ class StackViewDSLTests: XCTestCase {
     func testCanApplyTransformationInClosure() {
         let text = UUID().uuidString
         
-        let label = view.stackAdd { (v: UILabel) in
+        let label = view.add { (v: UILabel) in
             v.text = text
         }
         

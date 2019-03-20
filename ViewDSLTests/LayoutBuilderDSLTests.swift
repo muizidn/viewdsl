@@ -29,8 +29,8 @@ class LayoutBuilderDSLTests: XCTestCase {
         init() {}
         var label: UILabel!
         
-        func layout(_ view: UIView) {
-            view.add { [unowned self] (v: UILabel) in
+        func layout(_ dsl: ViewDSL) {
+            dsl.add { [unowned self] (v: UILabel) in
                 v.text = Label.text
                 self.label = v
             }

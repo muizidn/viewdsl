@@ -8,6 +8,22 @@
 
 import UIKit
 
-public protocol ViewDSL {
-    func addSubview(_ view: UIView)
+@objc
+public protocol ViewDSL: class {
+    @objc
+    func put(_ view: UIView)
+}
+
+extension UIView: ViewDSL {
+    @objc
+    public func put(_ view: UIView) {
+        addSubview(view)
+    }
+}
+
+extension UIStackView {
+    @objc
+    public override func put(_ view: UIView) {
+        addArrangedSubview(view)
+    }
 }
