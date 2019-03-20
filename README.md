@@ -122,3 +122,26 @@ stack.dsl(withInstanceOf: ProfileLayout2.self)
 Beautiful!!
 
 And some you may find it in Example project! Have a try!
+
+## Supporting 3rd Party Library
+
+This Library [AloeStackView](https://github.com/airbnb/AloeStackView) mimics UIStackView with functionalities added. It is a subclass of UIScrollView which made default `ViewDSL.put(_:)` implementations for either UIView or UIStackView invalid. You should support it your self. Is it possible?
+
+You may want to read this post before proceed [Override Protocol Extension Default Implementation in Swift](https://medium.com/@m.muizzsuddin_25037/override-protocol-extension-default-implementation-in-swift-969753f4b11b?fbclid=IwAR1RhhfHlsH3oMyP39cdai4_rt31Qh19EhzUpGY5RamAeQ9t_-GNUC004oM)
+
+ViewDSL make use of Dynamic Dispatch to determine what implementation of `put(_:)` to be called. And because either the protocol and it requirement is an @objc then we can override `put(_:)` for our AloeStackView.
+
+```swift
+extension ViewDSL where Self: AloeStackView {
+  @objc
+  public override put(_ view: UIView) {
+    addRow(view, animated: true)
+  }
+}
+
+view.add { (aloe: AloeStackView) in
+  aloe.add { (b: UIButton) in
+    b.setTitle("Click Me!", for: .normal)
+  }
+}
+```
