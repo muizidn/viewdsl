@@ -14,16 +14,18 @@ public protocol ViewDSL: class {
     func put(_ view: UIView)
 }
 
-extension UIView: ViewDSL {
+extension UIView: ViewDSL {}
+
+extension UIView {
     @objc
-    public func put(_ view: UIView) {
+    open func put(_ view: UIView) {
         addSubview(view)
     }
 }
 
 extension UIStackView {
     @objc
-    public override func put(_ view: UIView) {
+    open override func put(_ view: UIView) {
         addArrangedSubview(view)
     }
 }

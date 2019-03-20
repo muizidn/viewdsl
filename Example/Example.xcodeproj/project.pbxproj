@@ -15,6 +15,13 @@
 		4B72FE31224291BD0058FFFB /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE30224291BD0058FFFB /* ExampleTests.swift */; };
 		4B72FE3C224291BD0058FFFB /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE3B224291BD0058FFFB /* ExampleUITests.swift */; };
 		4B72FE4B224291DA0058FFFB /* ViewDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72FE4A224291DA0058FFFB /* ViewDSL.framework */; };
+		4BF3280E22430530003CF2A3 /* AloeStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */; };
+		4BF3281D224305D1003CF2A3 /* AloeStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; };
+		4BF32824224305D1003CF2A3 /* AloeStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32823224305D1003CF2A3 /* AloeStackViewTests.swift */; };
+		4BF32826224305D1003CF2A3 /* AloeStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF32816224305D1003CF2A3 /* AloeStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF32829224305D1003CF2A3 /* AloeStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; };
+		4BF3282A224305D1003CF2A3 /* AloeStackView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BF32832224305EC003CF2A3 /* AloeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32831224305EC003CF2A3 /* AloeStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,27 @@
 			remoteGlobalIDString = 4B72FE17224291BB0058FFFB;
 			remoteInfo = Example;
 		};
+		4BF3281E224305D1003CF2A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B72FE10224291BB0058FFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BF32813224305D1003CF2A3;
+			remoteInfo = AloeStackView;
+		};
+		4BF32820224305D1003CF2A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B72FE10224291BB0058FFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B72FE17224291BB0058FFFB;
+			remoteInfo = Example;
+		};
+		4BF32827224305D1003CF2A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B72FE10224291BB0058FFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BF32813224305D1003CF2A3;
+			remoteInfo = AloeStackView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4BF3282A224305D1003CF2A3 /* AloeStackView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +91,14 @@
 		4B72FE3B224291BD0058FFFB /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		4B72FE3D224291BD0058FFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B72FE4A224291DA0058FFFB /* ViewDSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewDSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AloeStackView+Extension.swift"; sourceTree = "<group>"; };
+		4BF32814224305D1003CF2A3 /* AloeStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AloeStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF32816224305D1003CF2A3 /* AloeStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AloeStackView.h; sourceTree = "<group>"; };
+		4BF32817224305D1003CF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF3281C224305D1003CF2A3 /* AloeStackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AloeStackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF32823224305D1003CF2A3 /* AloeStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloeStackViewTests.swift; sourceTree = "<group>"; };
+		4BF32825224305D1003CF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF32831224305EC003CF2A3 /* AloeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloeStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B72FE4B224291DA0058FFFB /* ViewDSL.framework in Frameworks */,
+				4BF32829224305D1003CF2A3 /* AloeStackView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +125,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BF32811224305D1003CF2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF32819224305D1003CF2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF3281D224305D1003CF2A3 /* AloeStackView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +149,8 @@
 				4B72FE1A224291BB0058FFFB /* Example */,
 				4B72FE2F224291BD0058FFFB /* ExampleTests */,
 				4B72FE3A224291BD0058FFFB /* ExampleUITests */,
+				4BF32815224305D1003CF2A3 /* AloeStackView */,
+				4BF32822224305D1003CF2A3 /* AloeStackViewTests */,
 				4B72FE19224291BB0058FFFB /* Products */,
 				4B72FE49224291DA0058FFFB /* Frameworks */,
 			);
@@ -107,6 +162,8 @@
 				4B72FE18224291BB0058FFFB /* Example.app */,
 				4B72FE2C224291BD0058FFFB /* ExampleTests.xctest */,
 				4B72FE37224291BD0058FFFB /* ExampleUITests.xctest */,
+				4BF32814224305D1003CF2A3 /* AloeStackView.framework */,
+				4BF3281C224305D1003CF2A3 /* AloeStackViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +177,7 @@
 				4B72FE22224291BD0058FFFB /* Assets.xcassets */,
 				4B72FE24224291BD0058FFFB /* LaunchScreen.storyboard */,
 				4B72FE27224291BD0058FFFB /* Info.plist */,
+				4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -150,7 +208,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4BF32815224305D1003CF2A3 /* AloeStackView */ = {
+			isa = PBXGroup;
+			children = (
+				4BF32816224305D1003CF2A3 /* AloeStackView.h */,
+				4BF32817224305D1003CF2A3 /* Info.plist */,
+				4BF32831224305EC003CF2A3 /* AloeStackView.swift */,
+			);
+			path = AloeStackView;
+			sourceTree = "<group>";
+		};
+		4BF32822224305D1003CF2A3 /* AloeStackViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BF32823224305D1003CF2A3 /* AloeStackViewTests.swift */,
+				4BF32825224305D1003CF2A3 /* Info.plist */,
+			);
+			path = AloeStackViewTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BF3280F224305D1003CF2A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF32826224305D1003CF2A3 /* AloeStackView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4B72FE17224291BB0058FFFB /* Example */ = {
@@ -165,6 +253,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4BF32828224305D1003CF2A3 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -207,6 +296,43 @@
 			productReference = 4B72FE37224291BD0058FFFB /* ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4BF32813224305D1003CF2A3 /* AloeStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF3282B224305D1003CF2A3 /* Build configuration list for PBXNativeTarget "AloeStackView" */;
+			buildPhases = (
+				4BF3280F224305D1003CF2A3 /* Headers */,
+				4BF32810224305D1003CF2A3 /* Sources */,
+				4BF32811224305D1003CF2A3 /* Frameworks */,
+				4BF32812224305D1003CF2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AloeStackView;
+			productName = AloeStackView;
+			productReference = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BF3281B224305D1003CF2A3 /* AloeStackViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF3282E224305D1003CF2A3 /* Build configuration list for PBXNativeTarget "AloeStackViewTests" */;
+			buildPhases = (
+				4BF32818224305D1003CF2A3 /* Sources */,
+				4BF32819224305D1003CF2A3 /* Frameworks */,
+				4BF3281A224305D1003CF2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BF3281F224305D1003CF2A3 /* PBXTargetDependency */,
+				4BF32821224305D1003CF2A3 /* PBXTargetDependency */,
+			);
+			name = AloeStackViewTests;
+			productName = AloeStackViewTests;
+			productReference = 4BF3281C224305D1003CF2A3 /* AloeStackViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +350,14 @@
 						TestTargetID = 4B72FE17224291BB0058FFFB;
 					};
 					4B72FE36224291BD0058FFFB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4B72FE17224291BB0058FFFB;
+					};
+					4BF32813224305D1003CF2A3 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					4BF3281B224305D1003CF2A3 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 4B72FE17224291BB0058FFFB;
 					};
@@ -245,6 +379,8 @@
 				4B72FE17224291BB0058FFFB /* Example */,
 				4B72FE2B224291BD0058FFFB /* ExampleTests */,
 				4B72FE36224291BD0058FFFB /* ExampleUITests */,
+				4BF32813224305D1003CF2A3 /* AloeStackView */,
+				4BF3281B224305D1003CF2A3 /* AloeStackViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +410,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BF32812224305D1003CF2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF3281A224305D1003CF2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF3280E22430530003CF2A3 /* AloeStackView+Extension.swift in Sources */,
 				4B72FE1E224291BB0058FFFB /* ViewController.swift in Sources */,
 				4B72FE1C224291BB0058FFFB /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +453,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BF32810224305D1003CF2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF32832224305EC003CF2A3 /* AloeStackView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF32818224305D1003CF2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF32824224305D1003CF2A3 /* AloeStackViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,6 +481,21 @@
 			isa = PBXTargetDependency;
 			target = 4B72FE17224291BB0058FFFB /* Example */;
 			targetProxy = 4B72FE38224291BD0058FFFB /* PBXContainerItemProxy */;
+		};
+		4BF3281F224305D1003CF2A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BF32813224305D1003CF2A3 /* AloeStackView */;
+			targetProxy = 4BF3281E224305D1003CF2A3 /* PBXContainerItemProxy */;
+		};
+		4BF32821224305D1003CF2A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B72FE17224291BB0058FFFB /* Example */;
+			targetProxy = 4BF32820224305D1003CF2A3 /* PBXContainerItemProxy */;
+		};
+		4BF32828224305D1003CF2A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BF32813224305D1003CF2A3 /* AloeStackView */;
+			targetProxy = 4BF32827224305D1003CF2A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -456,6 +638,7 @@
 		4B72FE41224291BD0058FFFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -473,6 +656,7 @@
 		4B72FE42224291BD0058FFFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -565,6 +749,101 @@
 			};
 			name = Release;
 		};
+		4BF3282C224305D1003CF2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AloeStackView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AloeStackView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BF3282D224305D1003CF2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AloeStackView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AloeStackView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BF3282F224305D1003CF2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AloeStackViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AloeStackViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		4BF32830224305D1003CF2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AloeStackViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AloeStackViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,6 +879,24 @@
 			buildConfigurations = (
 				4B72FE47224291BD0058FFFB /* Debug */,
 				4B72FE48224291BD0058FFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF3282B224305D1003CF2A3 /* Build configuration list for PBXNativeTarget "AloeStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF3282C224305D1003CF2A3 /* Debug */,
+				4BF3282D224305D1003CF2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF3282E224305D1003CF2A3 /* Build configuration list for PBXNativeTarget "AloeStackViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF3282F224305D1003CF2A3 /* Debug */,
+				4BF32830224305D1003CF2A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
