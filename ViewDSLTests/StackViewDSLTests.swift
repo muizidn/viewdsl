@@ -1,5 +1,5 @@
 //
-//  ViewDSLTests.swift
+//  StackViewDSL.swift
 //  ViewDSLTests
 //
 //  Created by PondokIOS on 20/03/19.
@@ -10,38 +10,39 @@ import XCTest
 import UIKit
 @testable import ViewDSL
 
-class ViewDSLTests: XCTestCase {
-    
-    private var view: UIView!
+class StackViewDSLTests: XCTestCase {
+
+    private var view: UIStackView!
     
     override func setUp() {
         super.setUp()
-        view = UIView()
+        view = UIStackView()
     }
-
+    
     override func tearDown() {
         view = nil
         super.tearDown()
     }
     
-    func testHasSubview() {
-        let subview = view.add { (v: UIView) in }
+    func testHasArrangedSubview() {
+        let subview = view.stackAdd { (v: UIView) in }
         XCTAssertTrue(view.subviews.contains(subview))
+        XCTAssertTrue(view.arrangedSubviews.contains(subview))
     }
-
-    func testReturnSubviewObject() {
+    
+    func testReturnArrangedSubviewObject() {
         var identifier: ObjectIdentifier!
-        let subview = view.add { (v: UIView) in
+        let subview = view.stackAdd { (v: UIView) in
             identifier = ObjectIdentifier(v)
         }
         
         XCTAssertEqual(ObjectIdentifier(subview), identifier)
     }
-
+    
     func testCanApplyTransformationInClosure() {
         let text = UUID().uuidString
         
-        let label = view.add { (v: UILabel) in
+        let label = view.stackAdd { (v: UILabel) in
             v.text = text
         }
         
@@ -53,6 +54,4 @@ class ViewDSLTests: XCTestCase {
         self.measure {
             view.add { (v: UIView) in }
         }
-    }
-
-}
+    }}

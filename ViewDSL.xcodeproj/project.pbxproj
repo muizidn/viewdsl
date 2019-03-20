@@ -10,6 +10,18 @@
 		EF61FF972241C2B900288741 /* ViewDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF61FF8D2241C2B900288741 /* ViewDSL.framework */; };
 		EF61FF9C2241C2B900288741 /* ViewDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FF9B2241C2B900288741 /* ViewDSLTests.swift */; };
 		EF61FF9E2241C2B900288741 /* ViewDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EF61FF902241C2B900288741 /* ViewDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF61FFA92241C35D00288741 /* ViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFA82241C35D00288741 /* ViewDSL.swift */; };
+		EF61FFAB2241C3AB00288741 /* StackViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFAA2241C3AB00288741 /* StackViewDSL.swift */; };
+		EF61FFB22241C53200288741 /* UIView+DSLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFB12241C53200288741 /* UIView+DSLExtensions.swift */; };
+		EF61FFB42241C56000288741 /* ViewDSL+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFB32241C56000288741 /* ViewDSL+Base.swift */; };
+		EF61FFB62241C5CC00288741 /* StackViewDSL+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFB52241C5CC00288741 /* StackViewDSL+Base.swift */; };
+		EF61FFB82241C5E000288741 /* BaseDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFB72241C5E000288741 /* BaseDSL.swift */; };
+		EF61FFBA2241C68F00288741 /* UIStackView+DSLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFB92241C68F00288741 /* UIStackView+DSLExtensions.swift */; };
+		EF61FFBC2241C73800288741 /* LayoutBuilderDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFBB2241C73800288741 /* LayoutBuilderDSL.swift */; };
+		EF61FFBE2241C79800288741 /* DelegatedDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFBD2241C79800288741 /* DelegatedDSL.swift */; };
+		EF61FFC92241E5E500288741 /* StackViewDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFC82241E5E500288741 /* StackViewDSLTests.swift */; };
+		EF61FFCB2241EA4F00288741 /* LayoutBuilderDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFCA2241EA4F00288741 /* LayoutBuilderDSLTests.swift */; };
+		EF61FFCD2241ED1400288741 /* InitializableLayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FFCC2241ED1400288741 /* InitializableLayoutBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +41,18 @@
 		EF61FF962241C2B900288741 /* ViewDSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewDSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF61FF9B2241C2B900288741 /* ViewDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDSLTests.swift; sourceTree = "<group>"; };
 		EF61FF9D2241C2B900288741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF61FFA82241C35D00288741 /* ViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDSL.swift; sourceTree = "<group>"; };
+		EF61FFAA2241C3AB00288741 /* StackViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDSL.swift; sourceTree = "<group>"; };
+		EF61FFB12241C53200288741 /* UIView+DSLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DSLExtensions.swift"; sourceTree = "<group>"; };
+		EF61FFB32241C56000288741 /* ViewDSL+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewDSL+Base.swift"; sourceTree = "<group>"; };
+		EF61FFB52241C5CC00288741 /* StackViewDSL+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackViewDSL+Base.swift"; sourceTree = "<group>"; };
+		EF61FFB72241C5E000288741 /* BaseDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDSL.swift; sourceTree = "<group>"; };
+		EF61FFB92241C68F00288741 /* UIStackView+DSLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+DSLExtensions.swift"; sourceTree = "<group>"; };
+		EF61FFBB2241C73800288741 /* LayoutBuilderDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilderDSL.swift; sourceTree = "<group>"; };
+		EF61FFBD2241C79800288741 /* DelegatedDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatedDSL.swift; sourceTree = "<group>"; };
+		EF61FFC82241E5E500288741 /* StackViewDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDSLTests.swift; sourceTree = "<group>"; };
+		EF61FFCA2241EA4F00288741 /* LayoutBuilderDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBuilderDSLTests.swift; sourceTree = "<group>"; };
+		EF61FFCC2241ED1400288741 /* InitializableLayoutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializableLayoutBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,8 @@
 		EF61FF8F2241C2B900288741 /* ViewDSL */ = {
 			isa = PBXGroup;
 			children = (
+				EF61FFAC2241C3E200288741 /* Extensions */,
+				EF61FFA72241C34A00288741 /* Protocols */,
 				EF61FF902241C2B900288741 /* ViewDSL.h */,
 				EF61FF912241C2B900288741 /* Info.plist */,
 			);
@@ -81,9 +107,35 @@
 			isa = PBXGroup;
 			children = (
 				EF61FF9B2241C2B900288741 /* ViewDSLTests.swift */,
+				EF61FFC82241E5E500288741 /* StackViewDSLTests.swift */,
 				EF61FF9D2241C2B900288741 /* Info.plist */,
+				EF61FFCA2241EA4F00288741 /* LayoutBuilderDSLTests.swift */,
 			);
 			path = ViewDSLTests;
+			sourceTree = "<group>";
+		};
+		EF61FFA72241C34A00288741 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EF61FFA82241C35D00288741 /* ViewDSL.swift */,
+				EF61FFAA2241C3AB00288741 /* StackViewDSL.swift */,
+				EF61FFB32241C56000288741 /* ViewDSL+Base.swift */,
+				EF61FFB72241C5E000288741 /* BaseDSL.swift */,
+				EF61FFB52241C5CC00288741 /* StackViewDSL+Base.swift */,
+				EF61FFBB2241C73800288741 /* LayoutBuilderDSL.swift */,
+				EF61FFCC2241ED1400288741 /* InitializableLayoutBuilder.swift */,
+				EF61FFBD2241C79800288741 /* DelegatedDSL.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF61FFAC2241C3E200288741 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF61FFB12241C53200288741 /* UIView+DSLExtensions.swift */,
+				EF61FFB92241C68F00288741 /* UIStackView+DSLExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +200,7 @@
 				TargetAttributes = {
 					EF61FF8C2241C2B900288741 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					EF61FF952241C2B900288741 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +247,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF61FFB22241C53200288741 /* UIView+DSLExtensions.swift in Sources */,
+				EF61FFBC2241C73800288741 /* LayoutBuilderDSL.swift in Sources */,
+				EF61FFB62241C5CC00288741 /* StackViewDSL+Base.swift in Sources */,
+				EF61FFB42241C56000288741 /* ViewDSL+Base.swift in Sources */,
+				EF61FFBE2241C79800288741 /* DelegatedDSL.swift in Sources */,
+				EF61FFB82241C5E000288741 /* BaseDSL.swift in Sources */,
+				EF61FFCD2241ED1400288741 /* InitializableLayoutBuilder.swift in Sources */,
+				EF61FFBA2241C68F00288741 /* UIStackView+DSLExtensions.swift in Sources */,
+				EF61FFA92241C35D00288741 /* ViewDSL.swift in Sources */,
+				EF61FFAB2241C3AB00288741 /* StackViewDSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF61FFCB2241EA4F00288741 /* LayoutBuilderDSLTests.swift in Sources */,
 				EF61FF9C2241C2B900288741 /* ViewDSLTests.swift in Sources */,
+				EF61FFC92241E5E500288741 /* StackViewDSLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +406,7 @@
 		EF61FFA22241C2B900288741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +424,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pondokit.ViewDSL;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +434,7 @@
 		EF61FFA32241C2B900288741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -383,6 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pondokit.ViewDSL;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,6 +461,7 @@
 		EF61FFA52241C2B900288741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7J25C59XU;
 				INFOPLIST_FILE = ViewDSLTests/Info.plist;
@@ -409,6 +480,7 @@
 		EF61FFA62241C2B900288741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7J25C59XU;
 				INFOPLIST_FILE = ViewDSLTests/Info.plist;
