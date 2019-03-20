@@ -121,4 +121,4 @@ stack.dsl(withInstanceOf: ProfileLayout2.self)
 
 Beautiful!!
 
-And some you may find it in Unit Tests files! Have a try!
+And some you may find it in Example project! Have a try!

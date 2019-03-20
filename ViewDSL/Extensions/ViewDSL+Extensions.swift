@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension ViewDSL {
+public extension ViewDSL {
     
     /// Base DSL
     ///
@@ -35,7 +35,7 @@ extension ViewDSL {
     }
 }
 
-extension ViewDSL {
+public extension ViewDSL {
     /// Delegated DSL
     ///
     /// - Parameter closure: function accept parameter of receiver type
@@ -53,7 +53,7 @@ extension ViewDSL {
     }
 }
 
-extension ViewDSL {
+public extension ViewDSL {
     
     /// Delegated DSL
     ///
