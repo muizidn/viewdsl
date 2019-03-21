@@ -11,6 +11,7 @@ import ViewDSL
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let stack = view.add { (s: UIStackView) in
             s.axis = .vertical
             s.distribution = .fillEqually

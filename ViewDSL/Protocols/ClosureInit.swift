@@ -13,7 +13,7 @@ public protocol ClosureInit: class {
 }
 
 extension ClosureInit {
-    init(_ completion: (Self) -> Void) {
+    public init(_ completion: (Self) -> Void) {
         self.init()
         completion(self)
     }
