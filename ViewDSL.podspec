@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ViewDSL"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A DSL way to build UI in Swift"
 
   spec.description  = <<-DESC

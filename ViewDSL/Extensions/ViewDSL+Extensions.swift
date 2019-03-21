@@ -44,6 +44,7 @@ public extension ViewDSL {
     /// - Returns: instace of view after closure applied
     @discardableResult
     func add<T>(_ view: T, closure: ((T) -> Void)? = nil) -> T where T: UIView {
+        put(view)
         defer { closure?(view) }
         return view
     }
