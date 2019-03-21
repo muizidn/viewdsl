@@ -1,6 +1,6 @@
 //
 //  UIKitDSL.swift
-//  Eduprime
+//  PondokIOS
 //
 //  Created by PondokIOS on 21/03/19.
 //  Copyright © 2019 PondokIT. All rights reserved.
