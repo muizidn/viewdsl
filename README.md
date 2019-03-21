@@ -57,6 +57,8 @@ extension ViewDSL {
 }
 ```
 
+The [UIKitDSL's like implementation](UIKitDSL.swift) has been provided for you. But it doesn't included in library by default. You must manually copy-paste it to your application. All method prefixed with `u` to indicate it produces UIKit class instance.
+
 ## DelegatedDSL
 
 You want to separate your common Button to reuse it later? Meet DelegatedDSL!
