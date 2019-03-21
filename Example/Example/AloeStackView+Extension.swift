@@ -11,7 +11,7 @@ import AloeStackView
 
 extension AloeStackView {
     @objc
-    open override func put(_ view: UIView) {
+    public override func put(_ view: UIView) {
         addRow(view, animated: true)
     }
 }

@@ -33,6 +33,20 @@ public extension ViewDSL {
         put(view)
         return view
     }
+    
+    
+    
+    /// Base DSL
+    ///
+    /// - Parameters:
+    ///   - view: view instance being
+    ///   - closure: closure to be applied to view
+    /// - Returns: instace of view after closure applied
+    @discardableResult
+    func add<T>(_ view: T, closure: ((T) -> Void)? = nil) -> T where T: UIView {
+        defer { closure?(view) }
+        return view
+    }
 }
 
 public extension ViewDSL {
