@@ -4,6 +4,9 @@ Heavily inspired from [UIKitDSL](https://github.com/mecid/UIKitSwiftDSL) but wan
 
 Have you known [Anko](https://github.com/Kotlin/anko)? That's beauty of DSL as first class citizen.
 
+## Constraint?
+No, ViewDSL doesn't handle constraint for you. It let you choose any constraint approach avilable or using other 3rd party library.
+
 ## Base DSL
 
 With ViewDSL you can build UI in declarative way.
