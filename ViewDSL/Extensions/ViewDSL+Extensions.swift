@@ -43,9 +43,9 @@ public extension ViewDSL {
     ///   - closure: closure to be applied to view
     /// - Returns: instace of view after closure applied
     @discardableResult
-    func add<T>(_ view: T, closure: ((T) -> Void)? = nil) -> T where T: UIView {
+    func add<T>(_ view: T, closure: (T) -> Void = { _ in }) -> T where T: UIView {
         put(view)
-        defer { closure?(view) }
+        defer { closure(view) }
         return view
     }
 }
@@ -72,22 +72,27 @@ public extension ViewDSL {
     
     /// Delegated DSL
     ///
-    /// - Parameter builder: LayoutBuilderDSL instance
+    /// - Parameters:
+    ///   - builder: LayoutBuilderDSL instance
+    ///   - closure: Closure applied to builder object
     /// - Returns: Parameter supplied object
     @discardableResult
-    func dsl<B>(delegatedTo builder: B) -> B where B: LayoutBuilderDSL {
+    func dsl<B>(delegatedTo builder: B, closure: (B) -> Void = { _ in }) -> B where B: LayoutBuilderDSL {
         builder.layout(self)
+        closure(builder)
         return builder
     }
     
-    
     /// Delegated DSL
     ///
-    /// - Parameter withInstanceOf: Type conform InitializableLayoutBuilderDSL
-    /// - Returns: instance of Parameter type
+    /// - Parameters:
+    ///   - withInstanceOf: Type conform InitializableLayoutBuilderDSL
+    ///   - closure: Closure applied to builder object
+    /// - Returns: Parameter supplied object
     @discardableResult
-    func dsl<B>(withInstanceOf: B.Type) -> B where B: InitializableLayoutBuilderDSL {
+    func dsl<B>(withInstanceOf: B.Type, closure: (B) -> Void = { _ in }) -> B where B: InitializableLayoutBuilderDSL {
         let builder = B()
+        closure(builder)
         return dsl(delegatedTo: builder)
     }
 }
