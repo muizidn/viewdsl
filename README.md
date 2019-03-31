@@ -1,5 +1,10 @@
 # ViewDSL
 
+[![Build Status](https://travis-ci.org/muizidn/viewdsl.svg?branch=master)](https://travis-ci.org/muizidn/eventclosure)
+[![codecov](https://codecov.io/gh/muizidn/viewdsl/branch/master/graph/badge.svg)](https://codecov.io/gh/muizidn/eventclosure)
+![GitHub top language](https://img.shields.io/github/languages/top/muizidn/viewdsl.svg?color=orange)
+![Cocoapods](https://img.shields.io/cocoapods/v/ViewDSL.svg?color=red)
+
 Heavily inspired from [UIKitDSL](https://github.com/mecid/UIKitSwiftDSL) but want some functionalities added.
 
 Have you known [Anko](https://github.com/Kotlin/anko)? That's beauty of DSL as first class citizen.
