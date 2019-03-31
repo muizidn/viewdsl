@@ -14,10 +14,10 @@ notifications:
    - muiz.idn@gmail.com
 
 env:
-  - ACTION=test DESTINATION='platform=iOS\ Simulator,name=iPhone\ 5s,OS=latest'
+  - ACTION=test DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=latest'
 
 script:
-  - xcodebuild -workspace ViewDSL.xcworkspace -scheme ViewDSL $ACTION -sdk iphonesimulator -destination $DESTINATION
+  - xcodebuild -workspace ViewDSL.xcworkspace -scheme ViewDSL -sdk iphonesimulator -destination "$DESTINATION" $ACTION
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
