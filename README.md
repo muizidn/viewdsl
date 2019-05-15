@@ -9,12 +9,16 @@ Heavily inspired from [UIKitDSL](https://github.com/mecid/UIKitSwiftDSL) but wan
 
 Have you known [Anko](https://github.com/Kotlin/anko)? That's beauty of DSL as first class citizen.
 
-## CocoaPod
+## Dependency Management
+### CocoaPod
 ViewDSL available through CocoaPod! Yay!
 ```ruby
 pod "ViewDSL"
 ```
-
+### Carthage
+```
+github "muizidn/viewdsl"
+```
 ## Constraint?
 No, ViewDSL doesn't handle constraint for you. It let you choose any constraint approach avilable or using other 3rd party library.
 
