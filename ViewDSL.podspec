@@ -16,6 +16,6 @@ This library helps you build your UI programmatically in fun way!
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/muizidn/viewdsl.git", :tag => "#{spec.version}" }
-  spec.source_files  = "ViewDSL/**/*.{h,m,swift}"
+  spec.source_files  = "ViewDSL/ViewDSL/**/*.{h,m,swift}"
 
 end
