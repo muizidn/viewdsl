@@ -6,7 +6,7 @@
 //  Copyright © 2019 PondokIT. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension ViewDSL {
     
