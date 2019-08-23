@@ -6,7 +6,7 @@
 //  Copyright © 2019 PondokIT. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public extension ViewDSL {
     
@@ -43,9 +43,9 @@ public extension ViewDSL {
     ///   - closure: closure to be applied to view
     /// - Returns: instace of view after closure applied
     @discardableResult
-    func add<T>(_ view: T, closure: ((T) -> Void)? = nil) -> T where T: UIView {
+    func add<T>(_ view: T, closure: (T) -> Void = { _ in }) -> T where T: UIView {
         put(view)
-        defer { closure?(view) }
+        defer { closure(view) }
         return view
     }
 }
@@ -77,9 +77,9 @@ public extension ViewDSL {
     ///   - closure: Closure applied to builder object
     /// - Returns: Parameter supplied object
     @discardableResult
-    func dsl<B>(delegatedTo builder: B, closure: ((B) -> Void)? = nil) -> B where B: LayoutBuilderDSL {
+    func dsl<B>(delegatedTo builder: B, closure: (B) -> Void = { _ in }) -> B where B: LayoutBuilderDSL {
         builder.layout(self)
-        closure?(builder)
+        closure(builder)
         return builder
     }
     
@@ -90,9 +90,9 @@ public extension ViewDSL {
     ///   - closure: Closure applied to builder object
     /// - Returns: Parameter supplied object
     @discardableResult
-    func dsl<B>(withInstanceOf: B.Type, closure: ((B) -> Void)? = nil) -> B where B: InitializableLayoutBuilderDSL {
+    func dsl<B>(withInstanceOf: B.Type, closure: (B) -> Void = { _ in }) -> B where B: InitializableLayoutBuilderDSL {
         let builder = B()
-        closure?(builder)
+        closure(builder)
         return dsl(delegatedTo: builder)
     }
 }
