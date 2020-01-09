@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B72FDD222428A260058FFFB /* ViewDSL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FDD122428A260058FFFB /* ViewDSL+Extensions.swift */; };
 		4B72FDD422428C830058FFFB /* ClosureInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FDD322428C830058FFFB /* ClosureInit.swift */; };
+		A7A621E923C6AE020044CFEE /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A621E823C6AE020044CFEE /* UIKit+Extensions.swift */; };
 		EF61FF972241C2B900288741 /* ViewDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF61FF8D2241C2B900288741 /* ViewDSL.framework */; };
 		EF61FF9C2241C2B900288741 /* ViewDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61FF9B2241C2B900288741 /* ViewDSLTests.swift */; };
 		EF61FF9E2241C2B900288741 /* ViewDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EF61FF902241C2B900288741 /* ViewDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		4B72FDD122428A260058FFFB /* ViewDSL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewDSL+Extensions.swift"; sourceTree = "<group>"; };
 		4B72FDD322428C830058FFFB /* ClosureInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureInit.swift; sourceTree = "<group>"; };
+		A7A621E823C6AE020044CFEE /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		EF61FF8D2241C2B900288741 /* ViewDSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewDSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF61FF902241C2B900288741 /* ViewDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDSL.h; sourceTree = "<group>"; };
 		EF61FF912241C2B900288741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4B72FDD122428A260058FFFB /* ViewDSL+Extensions.swift */,
+				A7A621E823C6AE020044CFEE /* UIKit+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				4B72FDD422428C830058FFFB /* ClosureInit.swift in Sources */,
 				EF61FFBC2241C73800288741 /* LayoutBuilderDSL.swift in Sources */,
+				A7A621E923C6AE020044CFEE /* UIKit+Extensions.swift in Sources */,
 				EF61FFCD2241ED1400288741 /* InitializableLayoutBuilder.swift in Sources */,
 				4B72FDD222428A260058FFFB /* ViewDSL+Extensions.swift in Sources */,
 				EF61FFA92241C35D00288741 /* ViewDSL.swift in Sources */,

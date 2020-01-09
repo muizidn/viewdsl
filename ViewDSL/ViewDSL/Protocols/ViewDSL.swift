@@ -9,23 +9,10 @@
 import UIKit
 
 @objc
+public protocol View {}
+
+@objc
 public protocol ViewDSL: class {
     @objc
-    func put(_ view: UIView)
-}
-
-extension UIView: ViewDSL {}
-
-extension UIView {
-    @objc
-    open func put(_ view: UIView) {
-        addSubview(view)
-    }
-}
-
-extension UIStackView {
-    @objc
-    open override func put(_ view: UIView) {
-        addArrangedSubview(view)
-    }
+    func put(_ view: View)
 }
