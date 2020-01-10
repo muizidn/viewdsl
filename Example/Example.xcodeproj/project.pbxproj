@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4B72FE1C224291BB0058FFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE1B224291BB0058FFFB /* AppDelegate.swift */; };
-		4B72FE1E224291BB0058FFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE1D224291BB0058FFFB /* ViewController.swift */; };
-		4B72FE21224291BB0058FFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B72FE1F224291BB0058FFFB /* Main.storyboard */; };
+		4B72FE1E224291BB0058FFFB /* ViewDSLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE1D224291BB0058FFFB /* ViewDSLController.swift */; };
 		4B72FE23224291BD0058FFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B72FE22224291BD0058FFFB /* Assets.xcassets */; };
 		4B72FE26224291BD0058FFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B72FE24224291BD0058FFFB /* LaunchScreen.storyboard */; };
 		4B72FE31224291BD0058FFFB /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE30224291BD0058FFFB /* ExampleTests.swift */; };
 		4B72FE3C224291BD0058FFFB /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B72FE3B224291BD0058FFFB /* ExampleUITests.swift */; };
 		4B72FE4B224291DA0058FFFB /* ViewDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72FE4A224291DA0058FFFB /* ViewDSL.framework */; };
-		4BF3280E22430530003CF2A3 /* AloeStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */; };
 		4BF3281D224305D1003CF2A3 /* AloeStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; };
 		4BF32824224305D1003CF2A3 /* AloeStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32823224305D1003CF2A3 /* AloeStackViewTests.swift */; };
 		4BF32826224305D1003CF2A3 /* AloeStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF32816224305D1003CF2A3 /* AloeStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BF32829224305D1003CF2A3 /* AloeStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; };
 		4BF3282A224305D1003CF2A3 /* AloeStackView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF32814224305D1003CF2A3 /* AloeStackView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BF32832224305EC003CF2A3 /* AloeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF32831224305EC003CF2A3 /* AloeStackView.swift */; };
+		A7A621ED23C6B5E60044CFEE /* ViewUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A621EC23C6B5E60044CFEE /* ViewUIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +78,7 @@
 /* Begin PBXFileReference section */
 		4B72FE18224291BB0058FFFB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B72FE1B224291BB0058FFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B72FE1D224291BB0058FFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B72FE20224291BB0058FFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B72FE1D224291BB0058FFFB /* ViewDSLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDSLController.swift; sourceTree = "<group>"; };
 		4B72FE22224291BD0058FFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B72FE25224291BD0058FFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B72FE27224291BD0058FFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		4B72FE3B224291BD0058FFFB /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		4B72FE3D224291BD0058FFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B72FE4A224291DA0058FFFB /* ViewDSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewDSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AloeStackView+Extension.swift"; sourceTree = "<group>"; };
 		4BF32814224305D1003CF2A3 /* AloeStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AloeStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF32816224305D1003CF2A3 /* AloeStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AloeStackView.h; sourceTree = "<group>"; };
 		4BF32817224305D1003CF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +96,10 @@
 		4BF32823224305D1003CF2A3 /* AloeStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloeStackViewTests.swift; sourceTree = "<group>"; };
 		4BF32825224305D1003CF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF32831224305EC003CF2A3 /* AloeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloeStackView.swift; sourceTree = "<group>"; };
+		A7A621EC23C6B5E60044CFEE /* ViewUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUIController.swift; sourceTree = "<group>"; };
+		A7A621EE23C6B9550044CFEE /* SwiftUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIController.swift; sourceTree = "<group>"; };
+		A7A621F023C6DC290044CFEE /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7A621F323C6DC510044CFEE /* UIView+recursiveDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+recursiveDescription.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,12 +173,14 @@
 			isa = PBXGroup;
 			children = (
 				4B72FE1B224291BB0058FFFB /* AppDelegate.swift */,
-				4B72FE1D224291BB0058FFFB /* ViewController.swift */,
-				4B72FE1F224291BB0058FFFB /* Main.storyboard */,
+				4B72FE1D224291BB0058FFFB /* ViewDSLController.swift */,
 				4B72FE22224291BD0058FFFB /* Assets.xcassets */,
 				4B72FE24224291BD0058FFFB /* LaunchScreen.storyboard */,
 				4B72FE27224291BD0058FFFB /* Info.plist */,
-				4BF3280D22430530003CF2A3 /* AloeStackView+Extension.swift */,
+				A7A621EC23C6B5E60044CFEE /* ViewUIController.swift */,
+				A7A621EE23C6B9550044CFEE /* SwiftUIController.swift */,
+				A7A621F323C6DC510044CFEE /* UIView+recursiveDescription.h */,
+				A7A621F023C6DC290044CFEE /* Example-Bridging-Header.h */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				TargetAttributes = {
 					4B72FE17224291BB0058FFFB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
 					};
 					4B72FE2B224291BD0058FFFB = {
 						CreatedOnToolsVersion = 10.1;
@@ -392,7 +396,6 @@
 			files = (
 				4B72FE26224291BD0058FFFB /* LaunchScreen.storyboard in Resources */,
 				4B72FE23224291BD0058FFFB /* Assets.xcassets in Resources */,
-				4B72FE21224291BB0058FFFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF3280E22430530003CF2A3 /* AloeStackView+Extension.swift in Sources */,
-				4B72FE1E224291BB0058FFFB /* ViewController.swift in Sources */,
+				4B72FE1E224291BB0058FFFB /* ViewDSLController.swift in Sources */,
+				A7A621ED23C6B5E60044CFEE /* ViewUIController.swift in Sources */,
 				4B72FE1C224291BB0058FFFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,14 +503,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B72FE1F224291BB0058FFFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B72FE20224291BB0058FFFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B72FE24224291BD0058FFFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -640,14 +635,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,14 +657,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -8,10 +8,10 @@
 import UIKit
 import ViewDSL
 
-class ViewController: UIViewController {
+class ViewDSLController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .white
         let stack = view.add { (s: UIStackView) in
             s.axis = .vertical
             s.distribution = .fillEqually
